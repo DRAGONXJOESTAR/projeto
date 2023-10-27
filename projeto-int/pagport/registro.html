@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../image/icone.ico">
+    <title>Index</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Indie+Flower&family=Signika&family=Work+Sans:ital,wght@0,100;0,200;1,100&display=swap');
+        @font-face {
+            font-family: visby;
+            src: url(../Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf);
+        }
+        
+
+        .dropdown:hover>.dropdown-content {
+            display: block;
+        }
+
+        .submenu {
+            background-color: #E06A56;
+            transition: background-color 0.2s ease-in;
+        }
+        .item {
+            background-color: #E06A56;
+            transition: background-color 0.2s ease-in;
+        }
+        .item:hover {
+            background-color: #704937;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in;
+        }
+        .submenu:hover {
+            background-color: #704937;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in;
+        }
+        header{
+            background-color: #E06A56;
+        }
+        h2{
+            font-family: 'Berkshire Swash';
+            color: rgb(249 115 22);
+        }
+        footer {
+            background-color: #704937;
+        }
+
+        /* animação */
+        .dropdown-content {
+            opacity: 0;
+            transition: opacity 0.2s ease-in;
+            pointer-events: none;
+        }
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+    </style>
+</head>
+
+<body class="bg-red-50 overflow-x-hidden">
+    <header class="py-3  w-full h-auto z-20">
+        <nav class="mx-auto flex justify-between items-center">
+            <div class="text-4xl font-semibold">
+                <a href="login.html"><img src="../image/logo.png" width="140px" height="140px"></a>
+            </div>
+            <!---MENU-->
+            <!---MENU-->
+            <div class="dropdown inline-block relative group">
+                <button class="font-medium py-2 px-4 rounded inline-flex items-center text-white bottom-16 mb-4 hover:bg-red-900 ">
+                    <span class="text-xl px-4 tracking-wide"><a href="pag-dev.html">Quem Somos</a></span>
+                </button>
+            </div>
+            <div class="inline-block ">
+                <a href="registro.html">
+                    <button class="mb-4 inline-flex justify-between float-right transition-transform duration-300 ease-in hover:scale-150 ">
+                        <img class="h-16 w-16 rounded-full " src="../image/user.png" alt="">
+                    </button>
+                </a>
+            </div>
+                <div class="dropdown inline-block relative group">
+                    <button class="font-medium py-2 px-4 rounded inline-flex items-center text-white hover:bg-red-900 mb-4">
+                        <span class="text-xl px-4 tracking-wide"><a href="contate_nos.html">Contate-nós</a></span>
+                    </button>
+            </div>
+            <div class="dropdown inline-block relative -left-36">
+                <button class="mb-4 font-medium px-3 rounded inline-flex items-center text-white hover:bg-red-900 hover:transition ease-in-out duration-200">
+                    <span class="menu text-xl py-3 px-5 tracking-wide "> Menu</span>
+                </button>
+                <ul class="dropdown-content absolute hidden pt-1">
+                    <li class="dropdown group relative ">
+                        <a class="submenu py-4 px-5 block whitespace-no-wrap hover:font-semibold text-white" href="#">Tópico 1</a>
+                        <ul class="dropdown-content absolute hidden pl-5 ml-24 -mt-12">
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-8" href="pag1.html">Página 1</a></li>
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-8" href="pag2.html">Página 2</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag3.html">Página 3</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag4.html">Página 4</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag5.html">Página 5</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag6.html">Página 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown group relative">
+                        <a class="submenu py-4 px-5 block whitespace-no-wrap hover:font-semibold text-white" href="#">Tópico 2</a>
+                        <ul class="dropdown-content absolute hidden pl-5 ml-24 -mt-12">
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-8" href="pag7.html">Página 1</a></li>
+                            <li><a class="item py-3 px-9 block whitespace-no-wrap text-white z-30 ml-8" href="pag8.html">Página 2</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag9.html">Página 3</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag10.html">Página 4</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag11.html">Página 5</a></li>
+                            <li><a class="item py-4 px-9 block whitespace-no-wrap text-white ml-8" href="pag12.html">Página 6</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="submenu  py-4 px-6 block whitespace-no-wrap text-white" href="../paging/index.html">Mudar para inglês</a></li>
+                </ul>
+            </div>
+            <!--fim do menu-->
+            <button class="md:hidden menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+   <!-- component -->
+<div class="bg-grey-lighter min-h-screen flex flex-col">
+    <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+            <h1 class="mb-8 text-3xl text-center">Registre</h1>
+            <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="fullname"
+                placeholder="Nome Completo" />
+
+            <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="email"
+                placeholder="Email" />
+
+            <input 
+                type="password"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="password"
+                placeholder="Senha" />
+            <input 
+                type="password"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="confirm_password"
+                placeholder="Confirmar Senha" />
+
+            <a href="login.html">
+                <button
+                    type="submit"
+                    class="w-full text-center py-3 rounded bg-green-900 text-white hover:bg-green-dark focus:outline-none my-1 z-40"
+                >Criar Conta</button>
+                        </div>
+            </a>
+
+        <div class="text-grey-dark mt-6">
+            Já possui conta? 
+            <a class="no-underline border-b border-blue text-blue-600" href="login.html">
+                Log in
+            </a>.
+        </div>
+    </div>
+</div>
+
+
+
+    <!----Footer-->
+    <footer class="text-white py-5 ">
+        <div class=" mx-auto text-left whitespace-pre-wrap">
+            <p class=" text-center">&copy; 2023 Cultura indígena</p>  
+             <p class="mt-0">EMAIL: Andyalan001@gmail.com                                    Numero-Cel-(11)980975256
+EMAIL: joao1232vi@gmail.com                                        Numero-Cel-(11)950920213 
+EMAIL: alexandrec768@gmail.com                                  Numero-Cel-(11) 953828437
+             </p>
+             </div>
+            </div>
+    </footer>
+</body>
+</html>
